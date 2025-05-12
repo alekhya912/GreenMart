@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Fresh Mart</title>
+    <link rel="stylesheet" href="styles copy 2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <h2 class="scrolling-text"><b>Fresh Grocery Waiting For You......</b></h2>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="https://cdn.dribbble.com/users/5821386/screenshots/16016909/fresh_mart_logo.png" alt="Fresh Mart Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index copy .html" class="nav-item"><b>Home</b></a></li>
+                <li class="dropdown">
+                    <button class="dropbtn"><b>Grocery</b></button>
+                    <div class="dropdown-content">
+                        <a href="grains.html">Grains & Millets</a>
+                        <a href="Dairy.html">Dairy Products</a>
+                        <a href="Oils.html">Oils</a>
+                        <a href="Spices.html">Spices</a>
+                        <a href="Snacks.html">Snacks</a>
+                        <a href="essentials.html">Daily Essentials</a>
+                    </div>
+                </li>
+                <li><a href="Fruits.html" class="nav-item"><b>Fruits & Vegetables</b></a></li>
+                <li><a href="Drinks.html" class="nav-item"><b>Drinks</b></a></li>
+                <li><a href="contact.html" class="nav-item"><b>Contact Us</b></a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="dropdown user-dropdown">
+                    <button class="user-btn">
+                        <img src="user-icon.png" alt="Login/Sign up">
+                    </button>
+                    <div class="dropdown-content user-menu">
+                        <a href="login.html">Log In</a>
+                        <a href="Registration.html">Sign Up</a>
+                    </div>
+                </div>
+                <a href="#" class="cart-icon">
+                    <img src="cart-icon.png" alt="Cart">
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="featured-products">
+            <div class="section-header">
+                <h2>All Products</h2>
+                <div class="section-underline"></div>
+            </div>
+            
+            <div class="product-container">
+                <!-- Fruits & Vegetables -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://th.bing.com/th/id/OIP.cFJA6HvKRZreOa1e_5MA2wHaHa?w=164&h=180&c=7&r=0&o=5&pid=1.7" alt="Mango">
+                        <div class="quick-view">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Mango</h3>
+                        <p class="price">₹ 45.00 / kg</p>
+                        <button class="buy-now" onclick="addToCart('Mango', 45)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://th.bing.com/th/id/R.b6bdfcb8b33b40138b1251891c6f3c79?rik=0Ld1Ll4NpM5tuA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fcarrot%2fcarrot_PNG4985.png&ehk=iAlKF2BxmuS3wkSSji5OpkKdkuZ2zeOt1js8nHW55uk%3d&risl=1&pid=ImgRaw&r=0" alt="Carrot">
+                        <div class="quick-view">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Carrot</h3>
+                        <p class="price">₹ 50.00 / kg</p>
+                        <button class="buy-now" onclick="addToCart('Carrot', 50)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Dairy Products -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://th.bing.com/th/id/OIP.UiG8BdKDvgh0ev_hfa_6mwHaHa?w=198&h=198&c=7&r=0&o=5&pid=1.7" alt="Amul Butter">
+                        <div class="quick-view">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Amul Butter</h3>
+                        <p class="price">₹ 300.00 / kg</p>
+                        <button class="buy-now" onclick="addToCart('Amul Butter', 300)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Oils -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/QG/MJ/YT/58520012/fortune-sunflower-refined-oil-15-ltr-500x500.jpg" alt="Fortune Sunflower Oil">
+                        <div class="quick-view">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Fortune Sunflower Oil</h3>
+                        <p class="price">₹ 120.00 / L</p>
+                        <button class="buy-now" onclick="addToCart('Fortune Sunflower Oil', 120)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Daily Essentials -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="http://ts4.mm.bing.net/th?id=OIP.ci_Cn2MmHv2NeV6RnHlKtQHaHa&pid=15.1" alt="Lifebuoy Soap">
+                        <div class="quick-view">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Lifebuoy Soap</h3>
+                        <p class="price">₹ 40.00</p>
+                        <button class="buy-now" onclick="addToCart('Lifebuoy Soap', 40)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Additional Products -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://th.bing.com/th/id/OIP.8vQB1g-Yf5CIXlbDPpZIowHaHa?pid=ImgDet&rs=1" alt="Tata Salt">
+                        <div class="quick-view">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Tata Salt</h3>
+                        <p class="price">₹ 25.00 / kg</p>
+                        <button class="buy-now" onclick="addToCart('Tata Salt', 25)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://th.bing.com/th/id/OIP.8CgRIXhUzAIHzW0ZNbAx4QHaHa?pid=ImgDet&rs=1" alt="Aashirvaad Atta">
+                        <div class="quick-view">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Aashirvaad Atta</h3>
+                        <p class="price">₹ 60.00 / kg</p>
+                        <button class="buy-now" onclick="addToCart('Aashirvaad Atta', 60)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://th.bing.com/th/id/OIP.RqOoT8JwQxBD1c9PBJ78_QHaHa?pid=ImgDet&rs=1" alt="Maggi">
+                        <div class="quick-view">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Maggi Noodles</h3>
+                        <p class="price">₹ 15.00</p>
+                        <button class="buy-now" onclick="addToCart('Maggi Noodles', 15)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://th.bing.com/th/id/OIP.2_nB_YcXUBxWghVxFvkIGQHaHa?pid=ImgDet&rs=1" alt="Red Label Tea">
+                        <div class="quick-view">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Red Label Tea</h3>
+                        <p class="price">₹ 140.00 / 500g</p>
+                        <button class="buy-now" onclick="addToCart('Red Label Tea', 140)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://th.bing.com/th/id/OIP.mPXBh8m7f8d_RQx8mOdFBAHaHa?pid=ImgDet&rs=1" alt="Nescafe Coffee">
+                        <div class="quick-view">
+                            <button>Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Nescafe Coffee</h3>
+                        <p class="price">₹ 180.00 / 200g</p>
+                        <button class="buy-now" onclick="addToCart('Nescafe Coffee', 180)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Notification -->
+    <div id="add-to-cart-message" class="hidden">
+        <div class="cart-notification-content">
+            <div class="check-icon">✓</div>
+            <div class="notification-text">
+                <h3>Product Added to Cart!</h3>
+                <p>Continue shopping or checkout now</p>
+            </div>
+            <button class="view-cart-btn">View Cart</button>
+            <button class="close-notification">×</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://cdn.dribbble.com/users/5821386/screenshots/16016909/fresh_mart_logo.png" alt="Fresh Mart Logo">
+                <p>Premium Grocery Provider</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="Fruits.html">Fruits & Vegetables</a></li>
+                        <li><a href="Dairy.html">Dairy Products</a></li>
+                        <li><a href="Grains.html">Grains & Millets</a></li>
+                        <li><a href="Oils.html">Oils & Spices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="returns.html">Returns Policy</a></li>
+                        <li><a href="shipping.html">Shipping Info</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4>Subscribe to our Newsletter</h4>
+                <p>Get the latest updates, offers and more</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p><b>Copyright © 2023-2025 FreshMart Grocery Supplies Pvt Ltd</b></p>
+            <div class="social-links">
+                <a href="#" class="social-icon">FB</a>
+                <a href="#" class="social-icon">IG</a>
+                <a href="#" class="social-icon">TW</a>
+                <a href="#" class="social-icon">YT</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

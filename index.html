@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Mart</title>
+  <link rel="stylesheet" href="styles copy 2.css">
+</head>
+
+<body>
+  <div class="x">
+    <h2><b>Fresh Grocery Waiting For You......</b></h2>
+  </div>
+  <div class="y">
+    <ul style="display: flex; align-items: center;margin-left: 25rem;position: relative;">
+      <!-- <div class="" style="padding-top:10px ;> -->
+        <img src="https://cdn.dribbble.com/users/5821386/screenshots/16016909/fresh_mart_logo.png" style="margin-top: 50px; border: 1px solid red; position: absolute; left: -8.8rem;top:-2rem; ">
+      <!-- </div> -->
+      <a href="index copy.html"><b><li>Home</li></b></a>
+      <div class="dropdown">
+        <button class="dropbtn" style="background: transparent;"><b>Grocery</b></button>
+        <div class="dropdown-content">
+          <a href="grains.html">Grains & Millets</a>
+          <a href="Dairy.html">Dairy Products</a>
+          <a href="Oils.html">Oils</a>
+          <a href="Spices.html">Spices</a>
+          <a href="Snacks.html">Snacks</a>
+          <a href="essentials.html">Daily Essentials</a>
+        </div>
+      </div>
+      <a href="Fruits.html"><b><li>Fruits & Vegetables</li></b></a>
+      <a href="Drinks.html"><b><li>Drinks</li></b></a>
+      <div class="dropdown1">
+        <button class="dropbtn1" style="height: 40px;width: 40px;background: transparent;" ><img src="12123009.png" alt="Login/Sign up" style="height: 100%;width: 100%;"></button>
+        <div class="dropdown-content1" style=" flex-direction: column;text-align: left;">
+          <a href="login.html">Log In</a>
+          <a href="Registration Form.html">Sign Up</a>
+        </div>
+      </div>
+      <a href="contact (1).html"><li><img src="304080.png" alt="Contact Us"></li></a>
+    </ul>
+    <br><br><br><br>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <a href="Grains.html"><img src="http://yesofcorsa.com/wp-content/uploads/2019/06/Grocery-Wallpaper-1024x575.jpg" style="width:100%"></a>
+        <div class="text">Freshers</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <a href="Fruits.html"><img src="https://freepngimg.com/thumb/grocery/41628-4-groceries-hd-image-free-png.png" style="width:100%"></a>
+        <div class="text">Fruits & Vegetables</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <a href="Drinks.html"><img src="https://wallpapercave.com/wp/wp9993716.jpg" style="width:100%"></a>
+        <div class="text">Drinks</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!-- <script src="scripts.js"></script> -->
+
+    <footer>
+      <div class="foot">
+        <p align="center"><b>Copyright © 2023-2025 FreshMart Grocery Supplies Pvt Ltd</b></p>
+      </div>
+    </footer>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); 
+      }
+    </script>
+</body>
+
+</html>

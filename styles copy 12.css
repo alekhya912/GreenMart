@@ -1,0 +1,281 @@
+.x
+{
+    padding: 5px;
+    text-align: center;
+    background-color:green;
+    color: rgb(247, 251, 251);
+    font-size: large;
+}
+.y ul {
+    margin:0%;
+    padding:10px;
+  
+    text-align: center;
+    opacity: 1.0; /* 80% opacity */
+    padding: 0px;
+    border-radius: 20px;
+}
+.y li {
+    display:inline-table;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+a{
+    color:  rgb(3, 7, 7);
+    font-size: 25px;
+padding: 15px;
+    display: inline-block;
+}
+a b{
+    font-size: 35px;
+}
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn
+{
+    opacity: 0.8;  
+  padding: 15px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: white;
+    opacity: 0.7;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a.img
+{
+  height: 5px;
+}
+footer {
+    opacity: 0.8;
+    text-align: center;
+    padding:   5px ;
+    position:fixed;
+    width: 100%;
+    height: 10%;
+    bottom: 0px;
+}
+.dropdown-content a:hover 
+{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
+
+.dropdown:hover .dropbtn 
+{
+  background-color:rgba(0, 0, 0, 0.1) ;
+}
+.dropdown1
+{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn1
+{
+   
+  color:black;
+  padding: 15px;
+  font-size: 15px;
+  size: 5px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content1
+{
+  display: none;
+  position: absolute;
+  background-color: white;
+  opacity: 0.7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content1 a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content1 a:hover 
+{
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0.1;
+}
+
+.dropdown1:hover .dropdown-content1 
+{
+  display: block;
+}
+
+.dropdown1:hover .dropbtn1 
+{
+  background-color:rgba(0, 0, 0, 0.1) ;
+}
+
+
+.slider {
+    width: 80%;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+   
+    height: auto;
+}
+.y img{
+    margin-top: 20px ;
+    align-self: center;
+    border-radius: 50%;
+    height: 90px;
+}
+.dropdown1 img{
+    height: 10px;
+}
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+}
+footer {
+  opacity: 0.6;
+  background-color: green;
+  text-align: center;
+  padding: 10px ;
+  position:relative;
+  width: 100%;
+  height: 10%;
+  bottom: 0px;
+}
+.mySlides img
+{
+    margin-left: 80px;
+    border-radius: 50%;
+    opacity: 0.8;
+width:80%;
+    height: 400px;
+}
+.y img
+{
+    border-radius: 80%;
+    height: 100px;
+}
+.foot
+{
+  font-size: x-large;
+  color: white;
+}
